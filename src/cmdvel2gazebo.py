@@ -96,10 +96,10 @@ class cmdvel2gazebo:
         # ones for the next timestep that we time out; note
         # that the tire angle will not change
         # NOTE: we only set self.x to be 0 after 200ms of timeout
-        if rospy.Time.now() - self.lastMsg > self.timeout:
+        #if rospy.Time.now() - self.lastMsg > self.timeout:
            # rospy.loginfo(rospy.get_caller_id() + " timed out waiting for new input, setting velocity to 0.")
-            self.x = 0
-            return
+            #self.x = 0
+            #return
 
         if self.z != 0:
             T=self.T
